@@ -1,57 +1,74 @@
-# GO
+# Todo App in Go
 
-Multi-Core oncurrency Support
-Built-in concurrency mechanism
+A task management application (Todo List) developed in Go, using the Gin Framework and PostgreSQL.
 
-C++/Java
-- Complex code
-- Expensive & Slow
+## 🚀 Technologies
 
+- [Go](https://golang.org/)
+- [Gin Framework](https://github.com/gin-gonic/gin)
 
-- Go was designed to run on multiple cores and 
-built to support concurrency
-- Concurrency in Go is cheap and easy
+## 📋 Prerequisites
 
-# Main Use Case of Go
+- Go 1.16 or higher
+- PostgreSQL
 
-- For Performant Applications
-- Running on scaled, distribuited systems (cloud plataform)
+## 🔧 Installation
 
-# Characterstics of Go
+1. Clone the repository
+```bash
+git clone https://github.com/PedroTeixeiraa/todo-go.git
+```
 
-## Attempt to ombine both:
-  1 - Simple and readable syntax of a dynamically typed language like PYTHON
-  2 - Efficiency and safety of a lower-level, statically typed language like C++
+2. Navigate to the project directory
+```bash
+cd todo-go
+```
 
-Simple Syntax: Easy to learn, read and write code
+3. Install dependencies
+```bash
+go mod download
+```
 
-Language features left out on purpose for simplicity
-(Goal: easy to maintain over time)
+4. Configure the environment variables
 
-Fast build time, start up and run
+5. Run the command to create the database
+```bash
+docker compose up -d
+```
 
-Requires fewer resources
+6. Start the application
+```bash
+go run main.go
+```
 
-Compiled Language
-  Go code is transformed into machine code by a compiler before it can run on a computer
+The server will be running at `http://localhost:8080`
 
+## 🛠️ API Endpoints
 
-# Download
+### Tasks
 
-- GoLand (IDE)
-- SDK (Software Development Kit) - Most recent version
+- `GET /tasks` - List all tasks
+- `POST /tasks` - Create a new task
+- `GET /tasks/:id` - Get a specific task
+- `PUT /tasks/:id` - Update a task
+- `DELETE /tasks/:id` - Delete a task
 
-# Structure
+### Task Format
+```json
+{
+  "title": "Example task",
+  "description": "Task description",
+  "completed": false
+}
+```
 
-main.go -> entry point of the program
-  GOROOT
-  GOPATH
+## 📝 License
 
-shuould have main function to run, the same of the java  
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-# Go command
-- go run main.go
+## ✒️ Author
 
+* **Pedro Teixeira** - [PedroTeixeiraa](https://github.com/PedroTeixeiraa)
 
-Todolist App
-
+---
+⌨️ with ❤️ by [Pedro Teixeira](https://github.com/PedroTeixeiraa) 😊
