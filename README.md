@@ -1,9 +1,18 @@
 # Todo App in Go
 
-A task management application (Todo List) developed in Go, using the Gin Framework, PostgreSQL and Kubernetes.
+A task management application (Todo List) developed in Go, using the Gin Framework, PostgreSQL and Kubernetes (Minikube).
 
+## Architecture
+![diagram.png](assets/diagram.png)
 
+## Minikube Dashboard
 ![img.png](assets/dashboard.png)
+
+## Pods
+![pods.png](assets/pods.png)
+
+## Code (Main.go)
+![code.png](assets/code.png)
 
 ## 🚀 Technologies
 
