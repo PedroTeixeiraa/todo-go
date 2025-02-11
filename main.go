@@ -8,14 +8,14 @@ import (
 )
 
 func main() {
-	fmt.Println("Iniciando aplicação...")
+	fmt.Println("Starting application...")
 
 	config.ConnectDB()
-	fmt.Println("Conexão ao banco bem-sucedida!")
+	fmt.Println("Database connection successful!")
 
 	r := gin.Default()
 	routes.SetupRoutes(r)
-	fmt.Println("Rotas configuradas. Servidor pronto para rodar.")
+	fmt.Println("Routes configured. Server ready to run.")
 
 	r.Run(":8080")
 }

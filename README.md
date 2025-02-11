@@ -2,7 +2,8 @@
 
 A task management application (Todo List) developed in Go, using the Gin Framework, PostgreSQL and Kubernetes.
 
-![img.png](assets/img.png)
+
+![img.png](assets/dashboard.png)
 
 ## 🚀 Technologies
 
